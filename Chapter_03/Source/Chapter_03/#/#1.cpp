@@ -1,5 +1,4 @@
-﻿/*
-#include <stdio.h>
+﻿#include <stdio.h>
 
 void main()
 {
@@ -15,5 +14,4 @@ void main()
 
 	i = 0;
 }
-*/
 

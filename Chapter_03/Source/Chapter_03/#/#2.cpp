@@ -1,5 +1,4 @@
-﻿/*
-#include <stdio.h>
+﻿#include <stdio.h>
 
 class Object
 {
@@ -22,6 +21,5 @@ int main()
 
 	object = 0;
 }
-*/
 
 
