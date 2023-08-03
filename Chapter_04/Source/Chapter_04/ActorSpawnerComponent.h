@@ -16,7 +16,6 @@ public:
 	// Sets default values for this component's properties
 	UActorSpawnerComponent();
 
-	// Will spawn actor when called
 	UFUNCTION(BlueprintCallable, Category=Cookbook)
 	void Spawn();
 

@@ -1,5 +1,5 @@
-
 // Fill out your copyright notice in the Description page of Project Settings.
+
 
 #include "InventoryComponent.h"
 
@@ -11,6 +11,16 @@ UInventoryComponent::UInventoryComponent()
 	PrimaryComponentTick.bCanEverTick = true;
 
 	// ...
+}
+
+int32 UInventoryComponent::AddToInventory(AInventoryActor* ActorToAdd)
+{
+	return CurrentInventory.Add(ActorToAdd);
+}
+
+void UInventoryComponent::RemoveFromInventory(AInventoryActor* ActorToRemove)
+{
+	CurrentInventory.Remove(ActorToRemove);
 }
 
 
@@ -32,12 +42,3 @@ void UInventoryComponent::TickComponent(float DeltaTime, ELevelTick TickType, FA
 	// ...
 }
 
-int32 UInventoryComponent::AddToInventory(AInventoryActor* ActorToAdd)
-{
-    return CurrentInventory.Add(ActorToAdd);
-}
-
-void UInventoryComponent::RemoveFromInventory(AInventoryActor* ActorToRemove)
-{
-    CurrentInventory.Remove(ActorToRemove);
-}

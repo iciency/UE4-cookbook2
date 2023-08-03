@@ -13,12 +13,8 @@ UCLASS()
 class CHAPTER_04_API AInventoryActor : public AStaticMeshActor
 {
 	GENERATED_BODY()
-
+	AInventoryActor();
 public:
-    // Sets default values for this actor's properties
-    AInventoryActor();
-
-    virtual void PickUp();
-    virtual void PutDown(FTransform TargetLocation);
-	
+	virtual void PickUp();
+	virtual void PutDown(FTransform TargetLocation);
 };

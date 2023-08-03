@@ -13,5 +13,5 @@ UCLASS()
 class CHAPTER_04_API AChapter_04GameModeBase : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+	AChapter_04GameModeBase();
 };

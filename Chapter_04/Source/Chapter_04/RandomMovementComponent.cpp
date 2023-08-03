@@ -21,7 +21,7 @@ void URandomMovementComponent::BeginPlay()
 	Super::BeginPlay();
 	
 	// ...
-	
+	Parent = GetOwner();
 }
 
 
@@ -31,7 +31,7 @@ void URandomMovementComponent::TickComponent(float DeltaTime, ELevelTick TickTyp
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// ...
-	AActor* Parent = GetOwner();
+	
 
 	if(Parent)
 	{

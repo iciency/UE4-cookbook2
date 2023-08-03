@@ -18,7 +18,6 @@ public:
 
 	UPROPERTY()
 	bool RotateToFaceOutwards;
-	
 	UPROPERTY()
 	float RotationSpeed;
 
@@ -26,7 +25,6 @@ public:
 	float OrbitDistance;
 
 	float CurrentValue;
-
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;

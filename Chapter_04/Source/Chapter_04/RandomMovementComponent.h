@@ -16,8 +16,11 @@ public:
 	// Sets default values for this component's properties
 	URandomMovementComponent();
 
-	UPROPERTY(EditAnywhere)
+	UPROPERTY()
 	float MovementRadius;
+	
+	UPROPERTY()
+	AActor* Parent;
 protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;

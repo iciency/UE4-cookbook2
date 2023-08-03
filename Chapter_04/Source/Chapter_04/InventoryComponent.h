@@ -11,28 +11,27 @@
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class CHAPTER_04_API UInventoryComponent : public UActorComponent
 {
-    GENERATED_BODY()
+	GENERATED_BODY()
 
 public:	
-    // Sets default values for this component's properties
-    UInventoryComponent();
+	// Sets default values for this component's properties
+	UInventoryComponent();
 
-    UPROPERTY()
-        TArray<AInventoryActor*> CurrentInventory;
+	UPROPERTY()
+	TArray<AInventoryActor*> CurrentInventory;
 
-    UFUNCTION()
-        int32 AddToInventory(AInventoryActor* ActorToAdd);
+	UFUNCTION()
+	int32 AddToInventory(AInventoryActor* ActorToAdd);
 
-    UFUNCTION()
-        void RemoveFromInventory(AInventoryActor* ActorToRemove);
-
+	UFUNCTION()
+	void RemoveFromInventory(AInventoryActor* ActorToRemove);
 protected:
-    // Called when the game starts
-    virtual void BeginPlay() override;
+	// Called when the game starts
+	virtual void BeginPlay() override;
 
 public:	
-    // Called every frame
-    virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
+	// Called every frame
+	virtual void TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction) override;
 
-        
+		
 };

@@ -4,19 +4,16 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "BarricksUnit.generated.h"
+#include "BarracksUnit.generated.h"
 
 UCLASS()
-class CHAPTER_04_API ABarricksUnit : public ACharacter
+class CHAPTER_04_API AABarracksUnit : public ACharacter
 {
 	GENERATED_BODY()
 
 public:
 	// Sets default values for this character's properties
-	ABarricksUnit();
-
-	UPROPERTY() 
-	UParticleSystemComponent* SpawnPoint; 
+	AABarracksUnit();
 
 protected:
 	// Called when the game starts or when spawned
@@ -26,7 +23,10 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY()
+	UParticleSystemComponent* SpawnPoint; 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	
 };
